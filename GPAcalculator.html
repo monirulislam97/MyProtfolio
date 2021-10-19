@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    
+    <title>GPA Calculator</title>
+</head>
+<body>
+   
+    <script src="js/GPAcalculate.js"></script>
+    <link rel="stylesheet" href="css/Calculator.css">
+
+ 
+  
+    
+    <!--Start Calculator-->
+    <div class="CalculatorBox">
+        <h1>GPA Calculator</h1>
+    
+    <form name="table_form" action="post">
+        <table border="1" width="400" id="myTable">
+        <tbody id="table_body">
+            <tr>
+                <th align="left" id ="Theader">Class</th><th align="left" id ="Theader">Credits</th><th align="left" id ="Theader">Marks</th>
+            </tr>
+            <tr>
+                <td><input type="text" maxlength="8" size="15" value="SCSJ2145"></td>
+                <td><input size="5" type="number" value="4" ></td>
+                <td><input size="5" type="number" value="90" ></td>
+            </tr>
+            <tr>
+                <td><input type="text" maxlength="8" size="15" value="SCSJ2202"></td>
+                <td><input size="5" type="number" value="3" ></td>
+                <td><input size="5" type="number" value="85" ></td>
+            </tr>
+            <tr>
+                <td><input type="text" maxlength="8" size="15" value="SCSJ2253"></td>
+                <td><input size="5" type="number" value="3" ></td>
+                <td><input size="5" type="number" value="85" ></td>
+            </tr>
+            <tr>
+                <td><input type="text" maxlength="8" size="15" value="SCSR2043"></td>
+                <td><input size="5" type="number" value="3" ></td>
+                <td><input size="5" type="number" value="90" ></td>
+            </tr>
+            <tr>
+                <td><input type="text" maxlength="8" size="15" value="SCSV1223"></td>
+                <td><input size="5" type="number" value="3" ></td>
+                <td><input size="5" type="number" value="90" ></td>
+            </tr>
+            <tr>
+                <td><input type="text" maxlength="8" size="15" value="ULAB2122"></td>
+                <td><input size="5" type="number" value="2" ></td>
+                <td><input size="5" type="number" value="90" ></td>
+            </tr>
+        </tbody>
+        </table>
+    </form><!--End table form-->
+
+    <form>
+        <input type="button" class="btn" value="Add Subject" onclick="addNewSubject()">
+        <input type="button" class="btn" value="Delete last Subject" onclick="deleteLastSubject()">
+    </form>
+
+    <!--Result Table Start-->
+    <form name="results" method="post" onsubmit="return false">
+        <table border="0" width="468">
+        <tbody><tr>
+            <td>Total Credits: <input  name="total_credits" class="result" size="10"></td>
+            <td>GPA: <input name="gpa" class="result"  size="10"></td>
+            <td><input type="button" class="btn" value="Calculate" onclick="sendElementToCalculate()"></td>
+            </tr>
+        </tbody>
+        </table>
+    </form> <!-- Result Table Ends-->
+    </div> <!--End Calculator Box-->
+ 
+</body></html>

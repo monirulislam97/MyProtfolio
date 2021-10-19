@@ -1,0 +1,61 @@
+
+* {
+    padding-top: 10px;
+    background-color:ivory
+  }
+
+.CalculatorBox {
+    border: 2px solid darkblue;
+    width: 490px;
+    max-height: 1100px;
+    margin: auto;
+    padding: auto;
+  }
+
+  .CalculatorBox >h1{
+      color: darkorange;
+      text-align: center;
+      background-color: black;
+      text-transform: uppercase;
+  }
+
+
+  .btn {
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color:darkorange ;
+    border-radius: 1rem;
+
+  }
+ 
+  .btn:hover {
+    background: transparent;
+    border-color: darkorange;
+    background-color: deepskyblue;
+    color:white;
+  }
+
+  .btn:active {
+    color:white;
+    background-color: green;
+  }
+
+  #Theader{
+      color: white;
+      background-color:darkorange ;
+      text-align: center;
+  }
+
+ tr >td{
+   background-color:deepskyblue;
+   border-radius: 1rem;
+ }
+ .result{
+  background-color:deepskyblue;
+  border-radius: 2rem;
+  text-align: center;
+  font-weight: bold;
+  color:black;
+ }

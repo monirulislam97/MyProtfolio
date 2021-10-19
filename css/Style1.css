@@ -1,0 +1,267 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+  background-color: firebrick;
+}
+
+.container {
+  max-width: 1152px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+header nav {
+  background: black;
+  border-radius: 2rem;
+  margin-right: 2rem;
+}
+
+header nav  .left a{
+  margin-right: 2rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+/* header body part wiht my photo and short intro */
+
+.myPhoto .left .img {
+  width: 400px;
+}
+
+.myPhoto .right {
+  color: white;
+}
+.myPhoto .right h5 {
+  font-size: 2 rem;
+  color: white;
+  margin-bottom: 0.5 rem;
+}
+
+.myPhoto .right h1 {
+  font-size: 4 rem;
+  font-weight: 100;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  color:greenyellow;
+}
+
+.myPhoto .right p {
+  font-style: italic;
+  line-height: 1.9;
+  margin-bottom: 2rem;
+}
+.myPhoto .right button {
+  padding: 0.6rem 2rem;
+  font-size: 1rem;
+  border-radius: 2rem;
+}
+.myPhoto .right button:hover {
+  background: green;
+  color: white;
+}
+
+.justify-center {
+  justify-content: center;
+}
+/* header body part finish */
+
+/* ABOUT SECTION  START*/
+section {
+  padding: 3rem 0rem;
+}
+
+section.about {
+  padding: 8rem;
+}
+section.about h1 {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  font-weight: 400px;
+}
+
+section.about h3 {
+  font-size: 1rem;
+  margin-bottom: 1 rem;
+  font-weight: 400 px;
+}
+section.about p {
+  font-family: Tahoma, sans-serif;
+  color: gray;
+  line-height: 1.8;
+  text-align: justify;
+  margin-bottom: 2rem;
+}
+section.about .social {
+  display: flex;
+}
+
+section.about .social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 60%;
+  margin-right: 0.6rem;
+}
+/* ABOUT SECTION  finish*/
+
+/* Services body part start */
+
+.heading {
+  color: black;
+  text-align: center;
+  margin-bottom: 1rem;
+  line-height: 0.5;
+}
+
+.heading + p {
+  color: grey;
+  font-family: sans-serif;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+section.services .card-wrapper .card img {
+  height: 60px;
+  width: 60px;
+}
+
+section.services {
+  background: whitesmoke;
+}
+section.services .card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 0.5rem;
+}
+
+section.services .card-wrapper .card {
+  background: white;
+  padding: 3rem 2rem;
+  position: relative;
+  padding-top: 0.5rem;
+  text-align: center;
+}
+section.services .card-wrapper .card h2 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+section.services .card-wrapper .card p {
+  font-family: sans-serif;
+  color: gray;
+  line-height: 1.6rem;
+}
+
+/* Services body part finish */
+
+/* freelance part start */
+section.freelancer {
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  url("css_images/backgroundimage1.jpg");
+  color: white;
+
+  padding-bottom: 10rem;
+}
+section.freelancer h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-family: cursive;
+}
+section.freelancer p {
+  margin-bottom: 2rem;
+}
+
+section.freelancer button {
+  padding: 0.6rem 2rem;
+  font-size: 1rem;
+  border-radius: 2rem;
+}
+
+section.freelancer button:hover {
+  background: green;
+  color: white;
+}
+
+/* freelance part finish */
+
+
+/* Contact Section*/
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: darkorange;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* footer section styling */
+footer {
+  background: #111;
+  padding: 15px 23px;
+  color: #fff;
+  text-align: center;
+}
+footer span a {
+  color: crimson;
+  text-decoration: none;
+}
+footer span a:hover {
+  color:darkorange;
+}
+footer h5 a{
+  text-decoration: none;
+  color: darkorange;
+}
